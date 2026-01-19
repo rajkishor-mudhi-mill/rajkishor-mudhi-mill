@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajkishor Mudhi Mill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0b1020, #1a1f3a);
+      color:#fff;
+    }
+    .container{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 20px 0;
+    }
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .logo img{
+      width:50px;
+      height:50px;
+      border-radius:12px;
+      object-fit:cover;
+      border: 2px solid #ffd700;
+    }
+    .logo h1{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+    .badge{
+      background: rgba(255, 215, 0, 0.15);
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 215, 0, 0.35);
+      font-weight:600;
+      color:#ffd700;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 40px;
+      align-items:center;
+      margin-top: 40px;
+    }
+    .hero h2{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 40px;
+      line-height: 1.1;
+      letter-spacing: 0.5px;
+    }
+    .hero p{
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.8);
+    }
+    .btn{
+      margin-top: 24px;
+      display:inline-block;
+      padding: 14px 22px;
+      border-radius: 12px;
+      text-decoration:none;
+      font-weight:700;
+      border: 1px solid rgba(255,215,0,0.6);
+      background: linear-gradient(135deg, rgba(255,215,0,0.95), rgba(255,215,0,0.6));
+      color:#111;
+      transition: transform .2s ease;
+    }
+    .btn:hover{transform: translateY(-2px);}
+    .card{
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    .card h3{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .card p{
+      color: rgba(255,255,255,0.8);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .mudhi-img{
+      width:100%;
+      border-radius: 18px;
+      border: 2px solid rgba(255,215,0,0.6);
+      object-fit:cover;
+      margin-top: 16px;
+    }
+    footer{
+      margin-top: 50px;
+      text-align:center;
+      color: rgba(255,255,255,0.6);
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px){
+      .hero{
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="https://i.imgur.com/1JQ0bJg.png" alt="Mudhi Image">
+        <h1>Rajkishor Mudhi Mill</h1>
+      </div>
+      <div class="badge">Premium</div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2>Rajkishor Mudhi Mill<br>Best Quality Mudhi in Town</h2>
+        <p>Welcome to Rajkishor Mudhi Mill — the finest mudhi with a perfect crunch and authentic taste. Made with premium ingredients and traditional methods for a taste you will love.</p>
+        <a class="btn" href="#details">Know More</a>
+      </div>
+
+      <div class="card">
+        <h3>Why Choose Us?</h3>
+        <p>✅ Freshly made daily<br>
+           ✅ Premium quality rice<br>
+           ✅ Pure taste with no additives<br>
+           ✅ Perfect for snacks & tea time</p>
+        <img class="mudhi-img" src="https://i.imgur.com/1JQ0bJg.png" alt="Mudhi">
+      </div>
+    </section>
+
+    <section id="details" class="card" style="margin-top:40px;">
+      <h3>Our Speciality</h3>
+      <p>
+        Rajkishor Mudhi Mill is famous for its crispy mudhi, made with care and love.  
+        Our mudhi is light, crunchy, and perfect for every occasion — from breakfast to evening snacks.
+      </p>
+    </section>
+
+    <footer>
+      © 2026 Rajkishor Mudhi Mill • All Rights Reserved
+    </footer>
+  </div>
+</body>
+</html>
